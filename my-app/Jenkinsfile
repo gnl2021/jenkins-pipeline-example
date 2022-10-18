@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                dir("/Users/impdmacbook/.jenkins/workspace/New_demo/my-app/") {
+                dir("/Users/impdmacbook/.jenkins") {
                 sh 'mvn -B -DskipTests clean package'
                 }
             
